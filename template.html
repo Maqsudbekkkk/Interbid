@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INTERBID - Эксперты по тендерам и госзакупкам</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0056b3',secondary:'#ffa726'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Montserrat', sans-serif;
+}
+.hero-section {
+background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 100%), url('https://readdy.ai/api/search-image?query=Professional%20business%20meeting%20with%20people%20in%20suits%20discussing%20tender%20documents%2C%20business%20charts%20and%20graphs%20on%20the%20table%2C%20modern%20office%20environment%2C%20blue%20color%20scheme%2C%20professional%20setting%2C%20high-quality%20corporate%20atmosphere&width=1200&height=600&seq=123&orientation=landscape');
+background-size: cover;
+background-position: right center;
+}
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(0, 86, 179, 0.1);
+}
+.advantage-card {
+transition: all 0.3s ease;
+}
+.advantage-card:hover {
+transform: scale(1.03);
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Навигация -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<a href="/" class="text-primary font-bold tracking-wider text-2xl" id="logo" style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.2em;">INTER<span class="text-gray-900">BID</span></a>
+<nav class="hidden md:flex items-center space-x-8">
+<div id="menuItems">
+<a href="#services" class="text-gray-700 hover:text-primary font-medium">Услуги</a>
+<a href="#advantages" class="text-gray-700 hover:text-primary font-medium">Преимущества</a>
+<a href="#why-us" class="text-gray-700 hover:text-primary font-medium">О нас</a>
+<a href="#contact" class="text-gray-700 hover:text-primary font-medium">Контакты</a>
+</div>
+</nav>
+<a href="#contact" class="bg-primary text-white px-5 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition-colors" data-uz="Biz bilan bog'laning" data-ru="Связаться с нами" data-en="Contact Us">Связаться с нами</a>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</header>
+<!-- Hero секция -->
+<section class="hero-section w-full py-20 md:py-32">
+<div class="container mx-auto px-4 w-full">
+<div class="max-w-2xl">
+<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Без ошибок. Без нервов. Только победы. Мы превращаем ваши тендеры в контракты</h1>
+<p class="text-lg text-gray-700 mb-8">Мы специализируемся на победах в тендерах и реализации проектов для бизнеса и государственных организаций. Верьте в свой успех!</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#services" class="bg-primary text-white px-8 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition-colors text-center">Наши Услуги</a>
+<a href="#contact" class="bg-white border border-primary text-primary px-8 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-gray-50 transition-colors text-center">Получить консультацию </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Услуги -->
+<section id="services" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Чем мы занимаемся?</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Наша команда экспертов предлагает комплексные решения "под ключ" для успешного участия в тендерах всех уровней, включая международные тендеры и государственные закупки.
+Мы сопровождаем вас на каждом этапе — от подбора тендера до успешного исполнения контракта.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Карточка услуги 1 -->
+<div class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-file-search-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Тендерное сопровождение</h3>
+<ul class="text-gray-600 mb-6 space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Поиск и анализ актуальных тендеров в нужной сфере</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Подготовка и подача заявок, оформление документации</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Юридическая экспертиза и минимизация рисков</span>
+</li>
+</ul>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Подробнее <i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+<!-- Карточка услуги 2 -->
+<div class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-building-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Проектная поддержка</h3>
+<ul class="text-gray-600 mb-6 space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Участие в конкурсах на государственные и коммерческие заказы</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Сопровождение проектов любой сложности и отраслевой направленности</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Подготовка технико-коммерческих предложений</span>
+</li>
+</ul>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Подробнее <i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+<!-- Карточка услуги 3 -->
+<div class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-graduation-cap-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Пост-тендерная поддержка</h3>
+<ul class="text-gray-600 mb-6 space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Помощь в исполнении контракта и взаимодействии с заказчиком </span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Разработка стратегий для повторных побед</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Анализ результатов и улучшение процессов участия</span>
+</li>
+</ul>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Подробнее <i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Предложения -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Что мы предлагаем?</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Комплексный подход к решению задач в сфере тендеров и государственных закупок</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Предложение 1 -->
+<div class="advantage-card bg-white rounded-lg shadow-sm p-6 border-t-4 border-primary">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-key-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">Под ключ</h3>
+<p class="text-gray-600"> Мы берём на себя все этапы участия в тендере: от анализа и подготовки до подачи заявки и сопровождения сделки.
+Вам остаётся только подписать контракт. </p>
+</div>
+<!-- Предложение 2 -->
+<div class="advantage-card bg-white rounded-lg shadow-sm p-6 border-t-4 border-primary">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-building-4-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">Экспертиза в 50+ отраслях</h3>
+<p class="text-gray-600">Опыт в тендерах по направлениям:
+строительство, IT, медицина, логистика, сельское хозяйство и многие другие</p>
+</div>
+<!-- Предложение 3 -->
+<div class="advantage-card bg-white rounded-lg shadow-sm p-6 border-t-4 border-primary">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-global-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">Работа с международными финансовыми институтами (МФИ)</h3>
+<p class="text-gray-600">Участвуем в тендерах, объявленных МФИ, включая Всемирный банк, ЕБРР, АБР и др.
+Знаем требования, процессы и стандарты.</p>
+</div>
+<!-- Предложение 4 -->
+<div class="advantage-card bg-white rounded-lg shadow-sm p-6 border-t-4 border-primary">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-customer-service-2-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">Пост-тендерная поддержка</h3>
+<p class="text-gray-600">Обеспечим исполнение контракта, поможем при возникновении спорных ситуаций, в том числе с заказчиком или контролирующими органами.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Преимущества -->
+<section id="advantages" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Наши ключевые преимущества</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Почему клиенты выбирают именно нас для сопровождения тендеров</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Преимущество 1 -->
+<div class="bg-white rounded-lg p-6 border border-gray-100 shadow-sm">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-check-line ri-lg text-green-600"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900">80% успешных заявок</h3>
+</div>
+<p class="text-gray-600">Благодаря глубокой проработке требований и многолетнему опыту наших экспертов.</p>
+</div>
+<!-- Преимущество 2 -->
+<div class="bg-white rounded-lg p-6 border border-gray-100 shadow-sm">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-time-line ri-lg text-green-600"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900">Экономия времени</h3>
+</div>
+<p class="text-gray-600">Подготовка заявки от 1 дня — вместо нескольких недель самостоятельной работы.</p>
+</div>
+<!-- Преимущество 3 -->
+<div class="bg-white rounded-lg p-6 border border-gray-100 shadow-sm">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-shield-check-line ri-lg text-green-600"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900">Снижение рисков</h3>
+</div>
+<p class="text-gray-600">Тщательная проверка документации на соответствие Закону РУз «О государственных закупках» и международным стандартам.</p>
+</div>
+<!-- Преимущество 4 -->
+<div class="bg-white rounded-lg p-6 border border-gray-100 shadow-sm">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-eye-line ri-lg text-green-600"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900">Прозрачность</h3>
+</div>
+<p class="text-gray-600">Фиксированная стоимость услуг или процент от суммы выигранного тендера — никаких скрытых платежей.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Почему мы -->
+<section id="why-us" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Почему мы?</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Узнайте, что делает нас лучшими в сфере тендерного сопровождения</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Блок 1 -->
+<div class="bg-white rounded-lg p-8 shadow-sm">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-team-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Команда экспертов</h3>
+<p class="text-gray-600">Юристы, инженеры, финансисты и IT-специалисты с более чем 10-летним опытом успешной работы в тендерах.</p>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Юристы</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Инженеры</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Финансисты</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">IT-специалисты</span>
+</div>
+</div>
+<!-- Блок 2 -->
+<div class="bg-white rounded-lg p-8 shadow-sm">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-scales-3-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Гибкость</h3>
+<p class="text-gray-600">Сотрудничаем с малым бизнесом и крупными корпорациями. Подбираем индивидуальные решения под задачи каждого клиента.</p>
+<div class="mt-6 grid grid-cols-2 gap-4">
+<div class="flex flex-col items-center p-3 bg-gray-50 rounded">
+<i class="ri-store-2-line ri-2x text-primary mb-2"></i>
+<span class="text-sm text-gray-700 text-center">Малый бизнес</span>
+</div>
+<div class="flex flex-col items-center p-3 bg-gray-50 rounded">
+<i class="ri-building-2-line ri-2x text-primary mb-2"></i>
+<span class="text-sm text-gray-700 text-center">Корпорации</span>
+</div>
+</div>
+</div>
+<!-- Блок 3 -->
+<div class="bg-white rounded-lg p-8 shadow-sm">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-trophy-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Фокус на результате</h3>
+<p class="text-gray-600">Мы не берем предоплату — платите только в случае победы. Мы заинтересованы в вашем успехе так же, как и вы.</p>
+<div class="mt-6 bg-green-50 p-4 rounded-lg">
+<div class="flex items-center">
+<i class="ri-award-line ri-lg text-green-600 mr-3"></i>
+<div>
+<p class="font-medium text-gray-900">Оплата только за результат</p>
+<p class="text-sm text-gray-600">Мы заинтересованы в вашей победе</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Отзывы клиентов -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Отзывы наших клиентов</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Что говорят о нас те, кто уже воспользовался нашими услугами</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Отзыв 1 -->
+<div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 flex">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"Сотрудничаем с INTERBID уже 3 года. За это время выиграли более 30 тендеров. Экономим ресурсы, время — и получаем стабильный результат. Однозначно рекомендую!"</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line ri-lg text-gray-500"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Владимир Мусаффиров</h4>
+<p class="text-sm text-gray-500">ООО "O'ZBEKO'QUVATOMATIKA"</p>
+</div>
+</div>
+</div>
+<!-- Отзыв 2 -->
+<div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 flex">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"INTERBID помог нам выиграть тендер на установку солнечной электростанции на сумму более 729 миллиардов сумов. Это крупнейший наш контракт, и без профессиональной поддержки мы бы не справились. Команда взяла на себя всё — от подготовки документации до победы. Спасибо!"</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line ri-lg text-gray-500"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Умаров Дилхаёт</h4>
+<p class="text-sm text-gray-500">ООО "CENERGY"</p>
+</div>
+</div>
+</div>
+<!-- Отзыв 3 -->
+<div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 flex">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-half-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"С INTERBID мы выиграли международный тендер на поставку спецтехники в одну из стран СНГ. Это был сложный и конкурентный процесс, требующий безупречной подготовки и знания международных требований. Команда справилась на отлично — отработали каждый документ. Победа стала возможной благодаря их опыту!">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line ri-lg text-gray-500"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Дмитрий Волков</h4>
+<p class="text-sm text-gray-500">ООО "ORIENT MOTORS"</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="py-16 bg-primary">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-white mb-6">Готовы начать выигрывать тендеры?</h2>
+<p class="text-white/90 text-lg mb-8">Оставьте заявку сейчас и получите бесплатную консультацию по вашему проекту</p>
+<a href="#contact" class="inline-block bg-white text-primary px-8 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-gray-100 transition-colors">Получить консультацию</a>
+</div>
+</div>
+</section>
+<!-- Контактная форма -->
+<section id="contact" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="max-w-5xl mx-auto">
+<div class="grid md:grid-cols-2 gap-12">
+<div>
+<h2 class="text-3xl font-bold text-gray-900 mb-6">Свяжитесь с нами</h2>
+<p class="text-gray-600 mb-8">Заполните форму, и наш специалист свяжется с вами в течение 2 часов для обсуждения вашего проекта</p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1">Адрес</h4>
+<p class="text-gray-600">г. Ташкент, Яккасарайский район, ул. Глинка, 29а</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1">Телефон</h4>
+<p class="text-gray-600">+998 (90) 874-47-75, </p>
+<p class="text-gray-600">+998 (33) 933-00-00 </p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1">Email</h4>
+<p class="text-gray-600">info@interbid.uz</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<form class="bg-white rounded-lg p-8 shadow-sm border border-gray-100">
+<div class="mb-6">
+<label for="name" class="block text-sm font-medium text-gray-700 mb-2">Ваше имя</label>
+<input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Иван Иванов">
+</div>
+<div class="mb-6">
+<label for="company" class="block text-sm font-medium text-gray-700 mb-2">Компания</label>
+<input type="text" id="company" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="ООО 'Компания'">
+</div>
+<div class="mb-6">
+<label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+<input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="info@company.uz">
+</div>
+<div class="mb-6">
+<label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Телефон</label>
+<input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="+998 (___) ___-__-__">
+</div>
+<div class="mb-6">
+<label for="message" class="block text-sm font-medium text-gray-700 mb-2">Сообщение</label>
+<textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Опишите ваш проект или задачу"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition-colors">Отправить заявку</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Партнеры -->
+<section class="py-12 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-10">
+<h2 class="text-2xl font-bold text-gray-900">Наши партнеры</h2>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+<div class="flex flex-col items-center">
+<i class="ri-bank-fill ri-3x text-gray-400"></i>
+<span class="mt-2 text-sm text-gray-500">OOO "ORIENT MOTORS"</span>
+</div>
+<div class="flex flex-col items-center">
+<i class="ri-building-4-fill ri-3x text-gray-400"></i>
+<span class="mt-2 text-sm text-gray-500">OOO "CIFRA B"</span>
+</div>
+<div class="flex flex-col items-center">
+<i class="ri-government-fill ri-3x text-gray-400"></i>
+<span class="mt-2 text-sm text-gray-500">OOO "O'ZBEKO'QUVAVTOMATIKA"</span>
+</div>
+<div class="flex flex-col items-center">
+<i class="ri-building-2-fill ri-3x text-gray-400"></i>
+<span class="mt-2 text-sm text-gray-500">ООО "ADELYA GROUP"</span>
+</div>
+<div class="flex flex-col items-center">
+<i class="ri-store-2-fill ri-3x text-gray-400"></i>
+<span class="mt-2 text-sm text-gray-500">ООО "MAERO"</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Футер -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<a href="#" class="text-white font-bold tracking-wider text-2xl mb-4 inline-block" style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.2em;">INTERBID<span class="text-gray-900">BID</span></a>
+<p class="text-gray-400 mb-6">Ваш надежный партнер в мире тендеров и госзакупок</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-telegram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-vk-line"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-whatsapp-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-medium mb-4">Услуги</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Тендерное сопровождение</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Проектная поддержка</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Консалтинг и обучение</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Юридическая экспертиза</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Аналитика тендеров</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-medium mb-4">Информация</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">О компании</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Отзывы клиентов</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Блог</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Вакансии</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Контакты</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-medium mb-4">Контакты</h4>
+<ul class="space-y-4">
+<li class="flex items-start">
+<i class="ri-map-pin-line mr-3 mt-1"></i>
+<span class="text-gray-400">г. Узбекистан, Ташкент, Яккасарайский район, ул Глинки 29а</span>
+</li>
+<li class="flex items-start">
+<i class="ri-phone-line mr-3 mt-1"></i>
+<span class="text-gray-400">+998 (33) 933-00-00</span>
+</li>
+<li class="flex items-start">
+<i class="ri-mail-line mr-3 mt-1"></i>
+<span class="text-gray-400">info@interbid.uz</span>
+</li>
+<li class="flex items-start">
+<i class="ri-time-line mr-3 mt-1"></i>
+<span class="text-gray-400">Пн-Пт: 9:00 - 18:00</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 ООО "INTERBID". Все права защищены.</p>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Политика конфиденциальности</a>
+<a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Пользовательское соглашение</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const logo = document.getElementById('logo');
+if (logo) {
+logo.addEventListener('click', function(e) {
+if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+e.preventDefault();
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+}
+});
+}
+const languageButtons = document.querySelectorAll('[data-lang]');
+const menuItems = document.querySelectorAll('#menuItems a, .bg-primary');
+const currentLang = document.getElementById('currentLang');
+// Remove translations object as it's no longer needed
+languageButtons.forEach(button => {
+button.addEventListener('click', function(e) {
+e.preventDefault();
+const lang = this.getAttribute('data-lang');
+// Update current language display
+currentLang.textContent = translations[lang].currentLang;
+// Update all translatable elements
+document.querySelectorAll('[data-translate]').forEach(element => {
+const key = element.getAttribute('data-translate');
+if (translations[lang][key]) {
+if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+element.placeholder = translations[lang][key];
+} else {
+element.textContent = translations[lang][key];
+}
+}
+});
+// Update specific elements like hero section
+if (document.querySelector('.hero-title')) {
+document.querySelector('.hero-title').textContent = translations[lang].heroTitle;
+}
+if (document.querySelector('.hero-desc')) {
+document.querySelector('.hero-desc').textContent = translations[lang].heroDesc;
+}
+// Update navigation items
+menuItems.forEach(item => {
+const key = item.getAttribute('data-translate');
+if (key && translations[lang][key]) {
+item.textContent = translations[lang][key];
+}
+});
+});
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 80,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+document.addEventListener('DOMContentLoaded', function() {
+// Phone mask for Uzbekistan format
+const phoneInput = document.getElementById('phone');
+if (phoneInput) {
+phoneInput.addEventListener('input', function(e) {
+let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,2})(\d{0,3})(\d{0,2})(\d{0,2})/);
+if (!x[2]) {
+e.target.value = '+998 (' + x[1];
+} else {
+e.target.value = '+998 (' + x[1] + ') ' + x[2] + (x[3] ? ' ' + x[3] : '') + (x[4] ? ' ' + x[4] : '') + (x[5] ? ' ' + x[5] : '');
+}
+});
+}
+});
+</script>
+</body>
+</html>
